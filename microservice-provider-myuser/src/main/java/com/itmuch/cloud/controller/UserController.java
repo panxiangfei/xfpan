@@ -37,7 +37,7 @@ public class UserController {
 
   @GetMapping("/eureka-instance")
   public String serviceUrl() {
-    InstanceInfo instance = this.eurekaClient.getNextServerFromEureka("MICROSERVICE-PROVIDER-USER", false);
+    InstanceInfo instance = this.eurekaClient.getNextServerFromEureka("MICROSERVICE-PROVIDER-MYUSER", false);
     return instance.getHomePageUrl();
   }
 
@@ -52,7 +52,7 @@ public class UserController {
     return user;
   }
 
-  // 该请求不会成功
+  //// 该请求不会成功
   @GetMapping("/get-user")
   public User getUser(User user) {
     return user;
