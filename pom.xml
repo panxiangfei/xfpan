@@ -13,6 +13,7 @@
 		<module>microservice-provider-myuser</module>
 		<module>microservice-discovery-myeureka</module>
 		<module>microservice-consumer-mymovie-ribbon</module>
+		<module>microservice-consumer-mymovie-ribbon-properties-customizing</module>
 	</modules>
 	
 	<properties>
